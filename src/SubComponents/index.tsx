@@ -23,11 +23,11 @@ import { KeyExtractor } from "../helper";
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import OutlinedInput, { OutlinedInputProps } from '@mui/material/OutlinedInput';
-interface ErrorProps {
+export interface ErrorProps {
   error?: boolean;
   message?: string;
 }
-interface InputOutlineProps extends ErrorProps {
+export interface InputOutlineProps extends ErrorProps {
   Title: string;
   MaxLength: number;
   minRows: number;
