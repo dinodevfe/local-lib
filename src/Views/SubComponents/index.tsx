@@ -61,7 +61,7 @@ const OverlayPageStyles: Styles<any, OverlayProps> = () => ({
 const LazyContent: FC<any> = (props) => {
     return <CircularProgress color="info" />
 }
-interface OverlayProps {
+export interface OverlayProps {
     classes: StyleClasses<typeof OverlayViewStyles>;
     style?: CSSProperties;
     Show?: boolean;
