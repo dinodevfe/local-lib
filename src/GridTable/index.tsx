@@ -16,10 +16,10 @@ import { CustomGridFilterPanel } from "./CustomGridFilterPanel";
 import { withStyles } from "@mui/styles";
 import { withStylesRef } from "../types";
 
-type GridInputComponentProps<R extends GridValidRowModel = any> = DataGridProps<R> & React.RefAttributes<HTMLDivElement>
+export type GridInputComponentProps<R extends GridValidRowModel = any> = DataGridProps<R> & React.RefAttributes<HTMLDivElement>
 
-type ModelBase = { [key: string]: any };
-type GridColDefCustom<TModel> = {
+export type ModelBase = { [key: string]: any };
+export type GridColDefCustom<TModel> = {
   [key in keyof Extract<TModel, ModelBase>]?: Omit<GridColDef, "field"> & { InsertPosition?: number };
 };
 
@@ -33,7 +33,7 @@ export interface DataTableProps<TModel> {
   };
   InnerProps?: Partial<GridInputComponentProps>;
 }
-interface ConfigTable<TModel> {
+export interface ConfigTable<TModel> {
   Options: GridColDefCustom<TModel>;
   SelectId: GridRowIdGetter<TModel>;
 }

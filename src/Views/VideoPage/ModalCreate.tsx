@@ -5,7 +5,7 @@ import { Styles, withStyles } from "@mui/styles";
 import { OverlayView } from "../SubComponents";
 import { AxiosError } from "axios";
 import React, { Component } from "react";
-import { DropzoneArea } from 'local-lib/DropZone'
+import { DropzoneArea } from '../../DropZone'
 import ReactAudioPlayer from "react-audio-player";
 import ReactPlayer from "react-player";
 import { FormGroup } from "reactstrap";
