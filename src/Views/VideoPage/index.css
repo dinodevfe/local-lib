@@ -1,0 +1,74 @@
+.container-video-page {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  flex-direction: column;
+}
+.container-video-page .panel-action {
+  height: 5rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+.container-video-page .panel-action .title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.wrap-thumb-video {
+  width: 100%;
+  height: 100%;
+}
+.wrap-thumb-video img {
+  width: 100%;
+}
+.thumb-processing {
+  animation: back-ground-change 5s infinite;
+  background-color: gray;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes back-ground-change {
+  0% {
+    background-color: lightgray;
+  }
+  50% {
+    background-color: gray;
+  }
+  100% {
+    background-color: lightgray;
+  }
+}
+.wrap-title-video {
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.wrap-title-video .title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  display: block;
+}
+.wrap-title-video .container-action {
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.MuiDataGrid-row:hover .container-action {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.MuiDataGrid-row.Mui-selected:hover .container-action {
+  /* background-color: #f0f1f9cc; */
+}

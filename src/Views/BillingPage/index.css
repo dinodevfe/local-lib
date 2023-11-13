@@ -1,0 +1,14 @@
+.container-card {
+    min-width: 200px;
+    margin: 5px;
+    min-height: 100px;
+  }
+  
+  .container-video-page .panel-action {
+    height: auto;
+  }
+  .wrap-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
