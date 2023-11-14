@@ -9,7 +9,7 @@ import { OrderPage, OrderPageBase } from "./Views/OrderPage";
 import { Sleep } from "./helper";
 import { Container } from "reactstrap";
 import Dropzone from 'react-dropzone'
-import { DropzoneArea } from "local-lib/DropZone";
+import { DropzoneArea } from "./DropZone";
 import * as Sub from './SubComponents'
 const styles = () => ({
   "@global": {
@@ -104,7 +104,7 @@ export default class App_V6 extends Component {
   public render() {
     return (
       <div>
-        <Sub.InputOutlinePassword MaxLength={100} Title='hello'  />
+        <Sub.InputOutlinePassword MaxLength={100} Title='hello' />
       </div>
 
     );
